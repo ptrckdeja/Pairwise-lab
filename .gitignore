@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.sqlite3-*
+.env
+.venv/
+venv/
+pairwise-reviews*.json
+.DS_Store

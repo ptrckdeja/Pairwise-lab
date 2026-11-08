@@ -1,0 +1,26 @@
+[
+  {
+    "prompt": "Write a Python function that returns the first even number in a list, or None if there isn't one. Do not change the input list.",
+    "category": "Python correctness",
+    "model_a": "synthetic-candidate-1",
+    "response_a": "def first_even(numbers):\n    for number in numbers:\n        if number % 2 == 0:\n            return number\n    return None",
+    "model_b": "synthetic-candidate-2",
+    "response_b": "def first_even(numbers):\n    numbers.sort()\n    for number in numbers:\n        if number % 2 == 0:\n            return number\n    return None"
+  },
+  {
+    "prompt": "Explain the difference between a backup and replication in exactly two sentences for someone new to cloud computing.",
+    "category": "Instruction following",
+    "model_a": "synthetic-candidate-1",
+    "response_a": "A backup is a saved copy of your data that you can use to recover an earlier state. Replication keeps another system updated with current data, but it can also copy accidental deletions and should not replace backups.",
+    "model_b": "synthetic-candidate-2",
+    "response_b": "Replication and backups both protect data. Replication copies every change to another system. This means you never need backups. Backups are just a slower version of replication."
+  },
+  {
+    "prompt": "A JavaScript API returns an empty array when there are no search results. Suggest a clear UI message, and do not claim the request failed.",
+    "category": "User experience",
+    "model_a": "synthetic-candidate-1",
+    "response_a": "No results found. Try a different search term or adjust your filters.",
+    "model_b": "synthetic-candidate-2",
+    "response_b": "Something went wrong. The server failed to process your request. Please try again later."
+  }
+]
